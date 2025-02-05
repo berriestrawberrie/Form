@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dream Pony</title>
+    <title>Hippo Shippo</title>
     <!--NORMALIZE CSS-->
     <link rel="stylesheet" href="css/normalize.css">
     <!--CUSTOM CSS-->
@@ -87,36 +87,44 @@
 
         <div class="div__form">
             <form action="#">
+
                 <fieldset>
                     <label for="name">Full Name : </label>
-                    <input type="text" class="input-large" id="name" placeholder="ex: John Doe">
+                    <input type="text" class="input-large" id="name" placeholder="ex: John Doe" required autofocus>
                 </fieldset>
+
                 <fieldset>
                     <section>
                         <label for="email">Email :</label>
-                        <input type="email" class="input-small" id="email" placeholder="john.doe@gmail.com" >
+                        <input type="email" class="input-small" id="email" placeholder="john.doe@gmail.com" required>
                     </section>
                     <section>
                         <label for="phone">Phone Number :</label>
                         <input type="tel" class="input-small" id="phone" placeholder="123-366-7890" >
                     </section>
                 </fieldset>
+
                 <fieldset>
                     <label for="subject">Subject : </label>
                     <select class="input-small" id="subject">
-                        <option value="order">My Order Status</option>
+                        <option value="order" selected>My Order Status</option>
                         <option value="previous">Past Shipment Question</option>
                         <option value="cost">Cost Estimate</option>
                         <option value="tracking">Tracking</option>
                         <option value="other">Other Inquiry</option>
                     </select>
                     <label for="message">Message :</label>
-                    <textarea name="message" cols="85" rows="6" class="textarea" placeholder="Enter your message"></textarea>
+                    <textarea name="message" id="message"  rows="6" class="textarea input-large" maxlength="250" placeholder="Enter your message (max 250)" required></textarea>
                     <!--CUSTOMIZE CHECKBOX-->
                     <div class="checkbox-wrap">
-
+                        <label for="subscribe" class="checkbox-label">
+                            <input type="checkbox" checked id="subscribe" name="subscribe" value="subscribe">
+                            <span class="checkbox-custom"><i class="fa-solid fa-check"></i></span>
+                            <p>I'd like to receive more information about Hippo Shippo!</p>
+                        </label>
                     </div>
                 </fieldset>
+
                 <fieldset>
                     <button type="Submit" class="btn btn-submit">Submit</button>
                 </fieldset>
@@ -125,9 +133,6 @@
 
         </div>
     </main>
-    
-    <footer>
-  
-    </footer>
+
 </body>
 </html>
