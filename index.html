@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/df8ac4cd23.js" crossorigin="anonymous"></script>
 
 </head>
@@ -51,21 +52,74 @@
                  sed do eiusmod tempor incididunt ut labore et dolore 
                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             <hr>
-            <table></table>
+            <table >
+                <tr>
+                    <td class="table-icon"><i class="fa-solid fa-phone"></i></td>
+                    <td class="table-text">
+                        <h5>Phone</h5>
+                        <p>+123-366-7890</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-icon"><i class="fa-solid fa-globe"></i></td>
+                    <td class="table-text">
+                        <h5>Website</h5>
+                        <p>www.hippo-shippo.com</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-icon"><i class="fa-solid fa-envelope"></i></td>
+                    <td class="table-text">
+                        <h5>Email</h5>
+                        <p>myship@hippo.com</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-icon"><i class="fa-solid fa-location-dot"></i></td>
+                    <td class="table-text">
+                        <h5>Address</h5>
+                        <p>123 Anywhere St.,Any City, ST 12345</p>
+                    </td>
+                </tr>
+                
+            </table>
         </div>
 
         <div class="div__form">
             <form action="#">
-                <label for="name">Full Name: </label>
-                <input type="text" id="name" placeholder="ex: John Doe">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="john.doe@gmail.com">
-                <label for="subject">Subject: </label>
-                <input type="text" id="subject">
-                <label for="message"></label>
-                <textarea id="message">
-                </textarea>
-                <input type="submit">
+                <fieldset>
+                    <label for="name">Full Name : </label>
+                    <input type="text" class="input-large" id="name" placeholder="ex: John Doe">
+                </fieldset>
+                <fieldset>
+                    <section>
+                        <label for="email">Email :</label>
+                        <input type="email" class="input-small" id="email" placeholder="john.doe@gmail.com" >
+                    </section>
+                    <section>
+                        <label for="phone">Phone Number :</label>
+                        <input type="tel" class="input-small" id="phone" placeholder="123-366-7890" >
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <label for="subject">Subject : </label>
+                    <select class="input-small" id="subject">
+                        <option value="order">My Order Status</option>
+                        <option value="previous">Past Shipment Question</option>
+                        <option value="cost">Cost Estimate</option>
+                        <option value="tracking">Tracking</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                    <label for="message">Message :</label>
+                    <textarea name="message" cols="85" rows="6" class="textarea" placeholder="Enter your message"></textarea>
+                    <!--CUSTOMIZE CHECKBOX-->
+                    <div class="checkbox-wrap">
+
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <button type="Submit" class="btn btn-submit">Submit</button>
+                </fieldset>
 
             </form>
 
